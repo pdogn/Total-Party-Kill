@@ -21,7 +21,6 @@ public class movement : MonoBehaviour
 
     private void Awake()
     {
-        
         AudioManager.instance.SFXRun.clip = AudioManager.instance.run;
     }
 
@@ -76,7 +75,7 @@ public class movement : MonoBehaviour
             allowJump = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) )
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow))
         {
             
             rb.drag = 0;
